@@ -1,2 +1,2 @@
 # Portafolio
-Portafolio personal
+Portafolio personal realizado solamente con HTML y CSS.
