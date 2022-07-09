@@ -22,6 +22,8 @@ p{
 }
 
 
+
+
 /* MENU DE NAVEGACION */
 
 header{
@@ -29,19 +31,15 @@ header{
     top: 0;
     z-index: 999;
     padding: 25px 25px;
-    background-color: black;
+    background-color: rgb(5, 9, 29);
 }
 
-
-
-nav{
-    background-color: rgb(2, 2, 2);
-}
 
 nav a{
     color: #f3f3f3;
     padding: 15px 0 0 60px;  
     text-decoration: none;
+    
 }
 nav a:hover{
     color: #156fa3ea;
@@ -56,7 +54,7 @@ nav a:hover{
     min-height: 95vh;
     background-image: url("/fotos/prog.jpg");
     background-attachment: fixed;
-    background-position: center ;
+    background-position: center;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -74,10 +72,12 @@ nav a:hover{
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.contenedor img{
+
+.img__cv img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+ 
 }
 
 .img__cv {
@@ -87,6 +87,25 @@ nav a:hover{
 .presentacion {
     padding-top: 120px;   
 }
+
+.presentacion ul{
+    list-style: none;
+    animation: cambiar 1.1s infinite;
+}
+
+/* @keyframes cambiar {
+    0% {margin-top: 0;}
+    10% {margin-top: -10;}
+    20% {margin-top: -20px;}
+    30% {margin-top: -30px;}
+    40% {margin-top: -40px;}
+    50% {margin-top: -40px;}
+    60% {margin-top: -30;}
+    70% {margin-top: -20px;}
+    80% {margin-top: -10px;}
+    90% {margin-top: 0;}
+    100%{margin-top: 0;}
+} */
 
 
 h1{
@@ -105,10 +124,12 @@ h1{
 .sobreMi img{
     width: 60px;
     height: 60px;
-    transition: .3s;
+    border-radius:50%;
+    transition: .1s;
 }
 .sobreMi img:hover{
-    transform: rotate(10deg) scale(1.1);
+    transform: rotate(20deg) scale(1.1);
+    width: 70px;
 }
 
 
@@ -116,32 +137,19 @@ h1{
     font-size: 25px;
 }
 /******** PROYECTOS *****************************************/
-h2{
+.titulo-proyectos{
     text-align: center;
+    margin-bottom: 80px;
 }
 
-.proyectos {
-    padding-top: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-content: center;
-    text-align: center;  
+.card-text{
+    color: #827a7a;
 }
-.proyectos figure{
-    position: relative;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 
-}
-.proyectos img{
-    width: 400px;
-    height: 300px;
-    border-radius: 6px;
-    transition: all 500ms ease-out;
-}
+
 /******** CONTACTO *****************************************/
 .contacto {
-    padding: 90px 0;
+    padding: 40px 0;
     
 }
 
@@ -151,16 +159,13 @@ h2{
 }
 
 .contacto img{
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
+    transition: .1s;
 }
 
 .contacto img:hover{
-    transition: .5s;
-    width: 100px;
-    height: 100px;
-
-    
+    transform: scale(1.3);
 }
 
 
@@ -174,7 +179,4 @@ h2{
 h6{
     text-align: center;
 }
-
-
-
 
